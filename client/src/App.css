@@ -71,6 +71,11 @@ li {
   color: blue;
 }
 
+b#greensmall {
+  color: var(--green-color);
+  font-size: var(--font-small);
+}
+
 button,
 button:focus {
   border: none;
@@ -126,6 +131,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 640px;
+  height: 420px;
   margin-right: 80px;
   align-items: center;
   justify-content: space-between;
@@ -154,11 +160,14 @@ body {
 .home_intro_rightBox {
   width: 420px;
   height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main_image {
-  width: 420px;
-  height: 420px;
+  width: 380px;
+  height: 380px;
 }
 
 .info_intro_leftBox {
@@ -186,13 +195,13 @@ body {
 }
 
 .info_intro_rightBox {
-  display: grid;
-  padding: 0;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
 }
 
 .info_image {
-  width: 180px;
-  height: 180px;
+  width: 360px;
+  height: 360px;
 }
