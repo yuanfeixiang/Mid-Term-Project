@@ -1,38 +1,198 @@
-.App {
+@font-face {
+  font-family: "BMHANNAPro";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;900&display=swap");
+
+:root {
+  /* Color */
+  --white-color: #f5f5f5;
+  --black-color: #0a0a0a;
+  --purple-color: #692cb9;
+  --green-color: #3bc978;
+  --yellow-color: #fee536;
+  --gray-color: #dcdfe2;
+  --dark-gray-color: #7d7d7d;
+  --red-color: #e2757e;
+  --deep-dark-gray-color: #444444;
+
+  /* Font Size */
+  --font-large: 48px;
+  --font-medium: 36px;
+  --font-medium2: 30px;
+  --font-small: 24px;
+  --font-content: 20px;
+  --font-micro: 16px;
+
+  /* Padding */
+  --basic-padding: 40px;
+  --smaller-padding: 18px;
+  --small-padding: 24px;
+  --big-padding: 36px;
+  --bigger-padding: 48px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "BMHANNAPro";
+  color: var(--white-color);
+}
+
+* a,
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+#red {
+  color: red;
+}
+
+#green {
+  color: green;
+}
+
+#blue {
+  color: blue;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+button.button_smallwhite {
+  width: 140px;
+  height: 40px;
+  padding: 8px 10px;
+  color: var(--white-color);
+  background-color: var(--green-color);
+  font-size: var(--font-small);
+}
+
+.button_smallcolor {
+  padding: 8px 24px;
+  font-size: var(--font-small);
+  color: var(--white-color);
+  background-color: var(--green-color);
+}
+
+/* big */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-color);
+}
+
+#root {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_main_button {
+  font-size: var(--font-medium);
+  background-color: var(--purple-color);
+  padding: 8px 15px;
+  margin-bottom: calc(var(--big-padding) * 2);
+}
+
+/* wording */
+.home_intro {
+  display: flex;
+  padding: 120px 80px;
+  border-top: 1px solid var(--deep-dark-gray-color);
+}
+
+.home_intro_leftBox {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  margin-right: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home_intro_title {
+  width: 100%;
+  font-size: var(--font-medium);
+  color: var(--yellow-color);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home_intro_description {
+  font-size: var(--font-content);
+  line-height: 2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home_intro_button {
+  font-size: var(--font-small);
+  background-color: var(--green-color);
+  padding: 8px 24px;
+  width: 35%;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home_intro_rightBox {
+  width: 420px;
+  height: 420px;
+}
+
+.main_image {
+  width: 420px;
+  height: 420px;
+}
+
+.info_intro_leftBox {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 640px;
+  margin-right: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+.info_intro_title {
+  width: 100%;
+  font-size: var(--font-medium);
+  color: var(--yellow-color);
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#info_intro_notFirst {
+  margin-top: 80px;
+}
+
+.info_intro_description {
+  margin: 36px 0px 0px 50px;
+  font-size: var(--font-content);
+  line-height: 2;
+}
+
+.info_intro_rightBox {
+  display: grid;
+  padding: 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 20px;
+}
+
+.info_image {
+  width: 180px;
+  height: 180px;
 }
