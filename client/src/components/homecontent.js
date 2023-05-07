@@ -35,7 +35,7 @@ function Homecontent() {
             class="button_smallcolor"
             onClick={() => window.open("https://chickifarm.com", "_blank")}
           >
-            치키농장 방문하기
+            사이트 방문하기
           </button>
         </div>
         <div className="home_intro_rightBox">
