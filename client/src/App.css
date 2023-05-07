@@ -76,6 +76,11 @@ b#greensmall {
   font-size: var(--font-small);
 }
 
+b#purplesmall {
+  color: var(--purple-color);
+  font-size: var(--font-small);
+}
+
 button,
 button:focus {
   border: none;
