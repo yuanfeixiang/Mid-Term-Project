@@ -94,7 +94,6 @@ function Homecontent() {
             <b id="redsmall">
               외 <b id="purplesmall">GTQ</b> 등 총 약 20개
             </b>
-            {/* <b id="redsmall">&nbsp;</b> */}
           </span>
         </div>
         <div className="info_intro_rightBox">
