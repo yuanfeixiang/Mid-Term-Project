@@ -90,6 +90,9 @@ function Homecontent() {
             <br />
             <b id="purplesmall">ITQ[한글, 엑셀, 파워포인트, 엑세스]</b>
             <b id="redsmall">(2011 ~ 2014)</b>
+            <br />
+            <b id="purplesmall">외 GTQ 등</b>
+            <b id="redsmall">(총 약 20개)</b>
           </span>
         </div>
         <div className="info_intro_rightBox">
