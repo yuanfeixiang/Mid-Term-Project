@@ -81,6 +81,11 @@ b#purplesmall {
   font-size: var(--font-small);
 }
 
+b#redsmall {
+  color: var(--red-color);
+  font-size: var(--font-small);
+}
+
 button,
 button:focus {
   border: none;
